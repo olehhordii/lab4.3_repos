@@ -30,10 +30,9 @@ int main()
     cout << " dx = " << endl; cin >> dx;
 
     cout << fixed;
-    cout << "--------------------------------------------------" << endl;
-    cout << "|" << setw(5) << "F" << " |"
-        << setw(9) << "xp" << " |" << setw(13) << "xk" << " |" << setw(17) << "dx" << " |" << endl;
-    cout << "--------------------------------------------------" << endl;
+    cout << "----------------" << endl;
+    cout << "|" << setw(5) << "F" << " |" << endl;
+    cout << "----------------" << endl;
     x = xp;
     while (x <= xk)
     {
@@ -45,15 +44,11 @@ int main()
             else
                 F = a * (x - c);
 
-        cout << "|" << setw(7) << setprecision(2) << F
-            << " |" << setw(10) << setprecision(3) << xp
-            << " |" << setw(13) << setprecision(4) << xk
-            << " |" << setw(16) << setprecision(5) << dx
-            << " |" << endl;
+        cout << "|" << setw(7) << setprecision(2) << F << endl;
 
         x += dx;
     }
-    cout << "--------------------------------------------------" << endl;
+    cout << "----------------" << endl;
     cin.get();
     return 0;
 }
